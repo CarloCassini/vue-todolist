@@ -26,6 +26,10 @@ createApp({
           text: "bonus 2",
           todo: false,
         },
+        {
+          text: "raggiungere il nirvana",
+          todo: false,
+        },
       ],
     };
   },

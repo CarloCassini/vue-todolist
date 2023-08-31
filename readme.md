@@ -5,6 +5,12 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 - text, una stringa che indica il testo del todo
 - done, un booleano (true/false) che indica se il todo è stato fatto oppure no
 
+### svolgimento:
+
+    - creo un array di oggetti
+    - collego css+js+bootrstap
+    - eseguo qualche test per vedere se è tutto ok
+
 ## MILESTONE 1
 
 Stampare all'interno di una lista HTML un item per ogni todo.

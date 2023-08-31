@@ -1,3 +1,8 @@
 .debug {
   border: 1px dashed red;
 }
+
+.task-done {
+  text-decoration-line: line-through;
+  text-decoration-color: rgba(255, 0, 0, 0.452);
+}
