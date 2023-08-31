@@ -54,12 +54,13 @@
               placeholder=" devi fare altro? "
               aria-describedby="button-addon2"
               v-model="newTodo.text"
+              @keyup.enter="addTask()"
             />
             <button
               class="btn btn-outline-secondary"
               type="button"
               id="button-addon2"
-              @click="addTask(newTodo)"
+              @click="addTask()"
             >
               Button
             </button>

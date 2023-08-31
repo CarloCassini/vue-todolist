@@ -20,7 +20,7 @@ createApp({
         },
         {
           text: "bonus 1",
-          done: false,
+          done: true,
         },
         {
           text: "bonus 2",
