@@ -24,7 +24,7 @@ createApp({
         },
         {
           text: "bonus 2",
-          done: false,
+          done: true,
         },
         {
           text: "raggiungere il nirvana",
@@ -50,6 +50,12 @@ createApp({
       const newToAdd = { ...this.newTodo };
       this.todo.unshift(newToAdd);
       this.newTodo.text = "";
+    },
+
+    taskCheck(index) {
+      this.todo[index].done
+        ? (this.todo[index].done = false)
+        : (this.todo[index].done = true);
     },
   },
 

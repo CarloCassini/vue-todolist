@@ -71,7 +71,10 @@
             <tbody>
               <tr v-for="(text,index) in todo">
                 <th scope="row">{{ index + 1 }}</th>
-                <td :class="(todo[index].done) ? 'task-done' : '' ">
+                <td
+                  :class="(todo[index].done) ? 'task-done' : '' "
+                  @click="taskCheck(index)"
+                >
                   {{ todo[index].text }}
                 </td>
                 <td class="task-cut" @click="eliminateTask(index)">X</td>
