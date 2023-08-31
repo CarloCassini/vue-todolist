@@ -31,6 +31,11 @@ createApp({
           done: false,
         },
       ],
+
+      newTodo: {
+        text: "",
+        done: false,
+      },
     };
   },
 
@@ -38,6 +43,12 @@ createApp({
     eliminateTask(index) {
       //   console.log(" riga " + index);
       this.todo.splice(index, 1);
+    },
+
+    addTask(newTodo) {
+      const nerToAdd = newTodo;
+      this.todo.unshift(nerToAdd);
+      newTodo.text("");
     },
   },
 

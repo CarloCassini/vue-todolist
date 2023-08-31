@@ -46,6 +46,26 @@
         <div class="col-8" id="app">
           <h1 class="debug text-center text-danger">ECCO LA TODOLIST</h1>
 
+          <!-- dove immetterò le nuove task -->
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder=" devi fare altro? "
+              aria-describedby="button-addon2"
+              v-model="newTodo.text"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              @click="addTask(newTodo)"
+            >
+              Button
+            </button>
+          </div>
+
+          <!-- dove apparirà la lista -->
           <table class="table">
             <tbody>
               <tr v-for="(text,index) in todo">
@@ -57,14 +77,6 @@
               </tr>
             </tbody>
           </table>
-
-          <!-- soluzione con il DIV -->
-          <!-- <div
-            v-for="(text,index) in todo"
-            :class="(todo[index].done) ? 'task-done' : '' "
-          >
-            {{ todo[index].text }}
-          </div> -->
         </div>
       </div>
       <!-- collegamento degli script -->
