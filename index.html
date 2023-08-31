@@ -44,9 +44,13 @@
           viceversa)
         </div>
         <div class="col-8" id="app">
-          <h1 class="debug text-center text-danger task-done">
-            {{ todo[0].text }}
-          </h1>
+          <h1 class="debug text-center text-danger">ECCO LA TODOLIST</h1>
+          <div
+            v-for="(text,index) in todo"
+            :class="(todo[index].done) ? 'task-done' : '' "
+          >
+            {{ todo[index].text }}
+          </div>
         </div>
       </div>
       <!-- collegamento degli script -->

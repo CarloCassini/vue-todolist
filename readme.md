@@ -1,4 +1,4 @@
-# Rifare l'esercizio della to do list.
+# Rifare l'esercizio della to do list. (done)
 
 Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 
@@ -15,6 +15,10 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 
 Stampare all'interno di una lista HTML un item per ogni todo.
 Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
+
+- creo un div differente per ogni elemento dell'array con "v-for"
+- faccio un v-bind sull'attributo class="" in cui eseguo una verifica del valore booleano di "todo"
+  - se true -> aggiungo la classe task-done all'elemenot creato
 
 ## MILESTONE 2
 
