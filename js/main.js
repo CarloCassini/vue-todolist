@@ -16,7 +16,7 @@ createApp({
         },
         {
           text: "milestone 3",
-          done: false,
+          done: true,
         },
         {
           text: "bonus 1",
@@ -45,10 +45,11 @@ createApp({
       this.todo.splice(index, 1);
     },
 
-    addTask(newTodo) {
-      const nerToAdd = newTodo;
-      this.todo.unshift(nerToAdd);
-      newTodo.text("");
+    addTask() {
+      // spread operator
+      const newToAdd = { ...this.newTodo };
+      this.todo.unshift(newToAdd);
+      this.newTodo.text = "";
     },
   },
 
