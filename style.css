@@ -6,3 +6,8 @@
   text-decoration-line: line-through;
   text-decoration-color: rgba(255, 0, 0, 0.452);
 }
+
+.task-cut {
+  cursor: pointer;
+  font-size: 1rem;
+}

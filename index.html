@@ -24,7 +24,7 @@
   <body>
     <div class="container m-3" id="app">
       <div class="row">
-        <div class="col-4">
+        <div class="col-4 fs-6">
           # Rifare l'esercizio della to do list. <br />
           Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
           <br />- text, una stringa che indica il testo del todo <br />- done,
@@ -45,12 +45,26 @@
         </div>
         <div class="col-8" id="app">
           <h1 class="debug text-center text-danger">ECCO LA TODOLIST</h1>
-          <div
+
+          <table class="table">
+            <tbody>
+              <tr v-for="(text,index) in todo">
+                <th scope="row">{{ index }}</th>
+                <td :class="(todo[index].done) ? 'task-done' : '' ">
+                  {{ todo[index].text }}
+                </td>
+                <td class="task-cut">X</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- soluzione con il DIV -->
+          <!-- <div
             v-for="(text,index) in todo"
             :class="(todo[index].done) ? 'task-done' : '' "
           >
             {{ todo[index].text }}
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- collegamento degli script -->
