@@ -24,6 +24,13 @@ Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
 
 Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.
 
+(++ ho portato tutto dentro una tabella costruita con bootstrap, fattore estetico++)
+
+- mettere una x accanto a ogni riga
+- al click della x deve scomparire la riga dalla tabella
+  - recupero l'index della riga incriminata
+  - faccio uno splice dall'array di riferimento
+
 ## MILESTONE 3
 
 Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.

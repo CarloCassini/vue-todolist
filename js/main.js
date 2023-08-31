@@ -12,7 +12,7 @@ createApp({
         },
         {
           text: "milestone 2",
-          done: false,
+          done: true,
         },
         {
           text: "milestone 3",
@@ -34,7 +34,12 @@ createApp({
     };
   },
 
-  methods: {},
+  methods: {
+    eliminateTask(index) {
+      //   console.log(" riga " + index);
+      this.todo.splice(index, 1);
+    },
+  },
 
   created() {},
 }).mount("#app");
